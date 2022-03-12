@@ -1,0 +1,7 @@
+// Project procedures
+
+// Project architecture: Create your src folder having server and client folder. Server side files should be inside the server folder while client side files (Js, Media, Styles, Views [html files]) should be inside the client folder
+// Set up package.json using 'git init' and install npm packages needed for this Project
+// Set up webpack to get the application running on localhost, webpack-development and webpack-production
+// Install url-loader in webpack to process images as base64 strings
+// Install CopyWebpackPlugin to copy all images into the dist folder

@@ -1,0 +1,75 @@
+.booking {
+    // background-color: #bbb;  
+
+    .tripOrder {
+        color: rgb(235, 220, 11);
+        margin-bottom: 20px;
+    
+        > p {
+            margin: 0;
+            font-size: 1.5rem;
+            padding-bottom: 3px;
+        };
+
+        > input {
+            padding: 10px 5px;
+            border-radius: 3px;
+            outline: 0;
+            border: 1px solid #000;
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        > input::placeholder {
+            color: #000;
+            font-size: 1rem;
+        }
+    }
+
+    .ticketDecision {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        // border: 1px solid red;
+
+        
+        > button {
+            padding: 15px 5px;
+            width: 150px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border: 0;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        > button:hover {
+            background-color: bisque;
+        }
+
+    }
+
+}
+
+
+
+
+
+// <form class="bookTrip">
+// <div class="tripOrder">
+//     <p>From: </p><input type="text" id="location" placeholder="Enter your destination">
+// </div>
+// <div class="tripOrder">
+//     <p>To: </p><input type="text" id="location" placeholder="Enter your destination">
+// </div>
+// <div class="tripOrder">
+//     <p>Departure: </p><input type="date" id="departing">
+// </div>
+// <div class="tripOrder">
+//     <p>Return Date: </p><input type="date" id="returnDate">
+// </div>
+// <div class="ticketDecision">
+//     <button type="submit" id="saveTrip">Create Trip</button>
+//     <button type="submit" id="clearTrip">Clear</button>
+// </div>
+// </form>
