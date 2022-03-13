@@ -5,3 +5,6 @@
 // Set up webpack to get the application running on localhost, webpack-development and webpack-production
 // Install url-loader in webpack to process images as base64 strings
 // Install CopyWebpackPlugin to copy all images into the dist folder
+// Apply styles to webpage
+
+//Start writing the functionalities

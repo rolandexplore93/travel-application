@@ -3,6 +3,9 @@ const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// import html from "./file.html";
+
 module.exports = {
     entry: "./src/client/index.js",
     mode: "development",
@@ -19,13 +22,6 @@ module.exports = {
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             },
             {
-                test:/\.(s*)css$/,
-                use: ExtractTextPlugin.extract({ 
-                    fallback: 'style-loader',
-                    use: ['css-loader','sass-loader']
-                })
-            },
-            {
                 test: /\.(png|jp(e*)g|svg)$/,  
                 use: [{
                     loader: 'url-loader',
@@ -34,7 +30,30 @@ module.exports = {
                         name: 'images/[hash]-[name].[ext]'
                     } 
                 }]
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                // use: [
+                //     {
+                //       loader: 'url-loader',
+                //       options: {
+                //         limit: 8192,
+                //       }
+                //     },
+                //   ],
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                loader: "file-loader",
+                options: {
+                    name: '[name].[hash:6].[ext]',
+                    outputPath: 'images',
+                    publicPath: 'images',
+                    emitFile: true,
+                    esModule: false
+                }
+            },
         ]
     },
     plugins: [
@@ -42,9 +61,12 @@ module.exports = {
             template: "./src/client/views/index.html",
             filename: "./index.html"
         }),
-        new CopyWebpackPlugin([
-            {from:'src/media',to:'images'} 
-        ]),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/client/media', to: 'dist' } 
+            ]
+        }),
     ]
 
 }
+

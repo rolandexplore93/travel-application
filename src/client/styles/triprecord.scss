@@ -1,0 +1,175 @@
+.trip__record {
+    // border: 1px solid yellow;
+}
+
+.trip__card {
+    // border: 1px solid red;
+    border-radius: 3px;
+    background-image: url('../media/road-6654573__480.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+
+    .card__header {
+        // background: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.4rem;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        
+        #loc {
+            color: yellow;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+    }
+
+    .trip__details {
+        display: flex;
+        // border: 1px solid red;
+        // justify-content: space-between;
+        width: 100%;
+
+        .trip__destination {
+            border: 1px solid yellow;
+            width: 60%;
+
+            > img {
+                border: 1px solid red;
+                height: 250px;
+                width: 100%;
+
+            }
+
+            > p:nth-child(2){
+                // color: rgb(236, 217, 41);
+                display: flex;
+                justify-content: space-between;
+                padding-right: 2px;
+            }
+
+        }
+
+        .trip__order {
+            border: 1px solid yellow;
+            width: 40%;
+            position: relative;
+
+            > p {
+                font-size: 1.3rem;
+            }
+
+            > p:nth-child(3), > p:nth-child(5){
+                color: yellow;
+                font-weight: 800;
+                background: rgba(223, 223, 181, 0.5);
+                padding: 5px 0;
+                text-align: center;
+            }
+
+            > p:nth-child(4), > p:nth-child(6){
+                text-align: center;
+            }
+
+            > p:nth-child(7) {
+                position: relative;
+                bottom: -20px;
+                // border: 1px solid red;
+            }
+
+            p > span {
+                color: rgb(236, 217, 41);
+                font-weight: bold;
+            }
+        };
+    }
+
+    .trip__extra {
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .trip__decision {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 20px;
+
+        button:nth-last-child(1) {
+            margin-left: 10px;
+            border-radius: 0;
+            border: 0;
+            padding: 10px 15px;
+        }
+        button:nth-last-child(1):hover {
+            background-color: red;
+            color: rgb(219, 159, 159);
+        }
+
+        button:nth-last-child(2) {
+            margin-right: 10px;
+            border-radius: 0;
+            border: 0;
+            padding: 10px 15px;
+        }
+
+        button:nth-last-child(2):hover {
+            background-color: green;
+            color: greenyellow;
+        }
+    }
+
+    button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: 0;
+        border: 1px solid rgb(98, 99, 66);
+        background-color: rgb(98, 99, 66);
+        color: #fff;
+    }
+
+    button:hover {
+        color: yellow;
+        background-color: rgb(98, 99, 66);
+        border: 1px solid rgb(98, 99, 66);
+    }
+}
+
+// <div class="trip__card">
+//                     <div class="card__header">
+//                         <i class="fab fa-github" aria-hidden="true"></i>
+//                         <p>Your Trip To <span id="loc">London, United Kingdom</span> is <span id="days-left">20</span> Days Away</p>
+//                         <i class="fab fa-github" aria-hidden="true"></i>
+//                     </div>
+//                     <div class="trip__details">
+//                         <div class="trip__destination">
+//                             <img src="" alt="destination">
+//                             <p id="about-country"><span>London, UK</span>, High:<span>30 degrees</span>, Low: <span>19 degrees</span></p>
+//                             <p id="currency">Currency: <span id="currency-name">Currency name</span> (<span id="currency-symbol">currency symbol</span>)</p>
+//                             <p id="country-weather">Weather description: <span id="weather-description">Cloudy</span></p>
+//                         </div>
+//                         <div class="trip__order">
+//                             <p>From: <span id="from-country">9ja</span></p>
+//                             <p>To: <span id="to-country">Yankee</span></p>
+//                             <p id="departure">DEPARTURE DATE</p>
+//                             <p id="departure-date">1/12/12</p>
+//                             <p id="return">RETURN DATE</p>
+//                             <p id="return-date">07/12/12</p>
+//                             <p id="duration">Your trip duration is <span>20 days</span></p>
+//                         </div>
+//                     </div>
+//                     <div class="trip__extra">
+//                         <button class="item lodging__info">+ Add lodging info</button>
+//                         <button class="item packing__list">+ Add packing list</button>
+//                         <button class="item notes">+ Add notes</button>
+//                     </div>
+//                     <div class="trip__decision">
+//                         <button class="trip__decide save__ticket"></button>
+//                         <button class="trip__decide remove__trip"></button>
+//                     </div>
+//                 </div>
