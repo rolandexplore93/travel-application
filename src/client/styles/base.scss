@@ -5,18 +5,19 @@
 }
 
 body {
-    border: 3px solid red;
+    border: 3px solid blue;
     margin: 0;
     font-size: 16px;
-    height: 100vh;
+    // height: 100vh;
     background-image: url('../media/panorama-2117310__480.webp');
     // background-image: url('../media/airplane-6674689_1920.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: grid;
-    // grid-template-columns: 500px;
+    // grid-template-columns: 100%;
     align-items: center;
     justify-content: center;
+    // width: 100%;
 
 }
 
@@ -27,7 +28,7 @@ body {
     // background-image: url('../media/road-6654573__480.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px solid red;
+    border: 3px solid red;
     // text-align: center;
     // display: grid;
     // // grid-template-columns: 500px;
@@ -38,22 +39,30 @@ body {
     // opacity: 0.8;
     // width: 800px;
     // height: inherit;
+    // width: inherit;
 }
 
 .headline {
     // border: 2px solid #fff;
+    // width: inherit;
 }
 
 .booking {
     // border: 2px solid #fff;
+    // width: inherit;
+
 }
 
 .trip-documentation {
     // border: 2px solid #fff;
+    // width: inherit;
+
 
 }
 
 footer {
     // height: 150px;
     border: 1px solid red;
+    width: inherit;
+
 }

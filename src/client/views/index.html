@@ -18,10 +18,10 @@
         <section class="booking">
             <form class="bookTrip">
                 <div class="tripOrder">
-                    <p>From: </p><input type="text" id="location" placeholder="Enter your destination">
+                    <p>From: </p><input type="text" id="locationFrom" placeholder="Enter your destination">
                 </div>
                 <div class="tripOrder">
-                    <p>To: </p><input type="text" id="location" placeholder="Enter your destination">
+                    <p>To: </p><input type="text" id="locationTo" placeholder="Enter your destination">
                 </div>
                 <div class="tripOrder">
                     <p>Departure: </p><input type="date" id="departing">
@@ -41,7 +41,7 @@
             </div>
             <div class="trip__record">
 
-                <div class="trip__card">
+                <!-- <div class="trip__card">
                     <div class="card__header">
                         <i class="fas fa-plane-departure fa-2x"></i>
                         <p>Your Trip To <span id="loc">London, United Kingdom</span> is <span id="days-left">20</span> Days Away</p>
@@ -50,7 +50,6 @@
                     <div class="trip__details">
                         <div class="trip__destination">
                             <img src="<%= require('../media/airplane-6674689_1920.jpg') %>" width="200" height="200">
-                            <!-- <img src= alt=""> -->
                             <p class="" id="about-country"><span>London, UK</span><span>High: 30 degrees</span><span>Low: 19 degrees</span></p>
                             <p id="currency">Currency: <span id="currency-name">Currency name</span> (<span id="currency-symbol">currency symbol</span>)</p>
                             <p id="country-weather">Weather description: <span id="weather-description">Cloudy</span></p>
@@ -74,7 +73,7 @@
                         <button class="trip__decide save__ticket">Save Ticket</button>
                         <button class="trip__decide remove__trip">Remove Trip</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
            
@@ -98,5 +97,20 @@
         </footer>
     </div>
     
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>

@@ -32,28 +32,32 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                // use: [
-                //     {
-                //       loader: 'url-loader',
-                //       options: {
-                //         limit: 8192,
-                //       }
-                //     },
-                //   ],
-                type: 'asset/resource',
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                type: "asset",
             },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                loader: "file-loader",
-                options: {
-                    name: '[name].[hash:6].[ext]',
-                    outputPath: 'images',
-                    publicPath: 'images',
-                    emitFile: true,
-                    esModule: false
-                }
-            },
+            // {
+            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            //     // use: [
+            //     //     {
+            //     //       loader: 'url-loader',
+            //     //       options: {
+            //     //         limit: 8192,
+            //     //       }
+            //     //     },
+            //     //   ],
+            //     type: 'asset/resource',
+            // },
+            // {
+            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            //     loader: "file-loader",
+            //     options: {
+            //         name: '[name].[hash:6].[ext]',
+            //         outputPath: 'images',
+            //         publicPath: 'images',
+            //         emitFile: true,
+            //         esModule: false
+            //     }
+            // },
         ]
     },
     plugins: [
