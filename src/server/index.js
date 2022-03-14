@@ -59,12 +59,6 @@ async function handleTripRequest(request, response){
             error: "Input is not valid"
         }));
     } 
-    // else {
-    //         response.status(200).json({
-    //             status: "success",
-    //             message: "post request received successfully",
-    //         })
-    // }
 
     // Get the api key to make an api call
     // const callToGeonames = GEONAMES_APIKEY;

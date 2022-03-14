@@ -13,8 +13,6 @@ export async function submitForm(evt){
     console.log(departureDate)
     console.log(returnDate)
 
-    // tripDuration();
-    // daysToTrip();
     tripInformation(locationTo, locationFrom, departureDate, returnDate)
     .then(data => {
         console.log(data);
@@ -29,11 +27,6 @@ export async function submitForm(evt){
 
 
 }
-
-// export function errorHandling(error){
-//     alert('This request cannot be processed. Please, check if you entered the correct input', error);
-//     console.log("error", error);
-// }
 
 export const displayTripToUI = async(updateTrip) => {
     

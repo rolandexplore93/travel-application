@@ -1,5 +1,4 @@
 * {
-    // margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,7 +9,6 @@ body {
     font-size: 16px;
     // height: 100vh;
     background-image: url('../media/panorama-2117310__480.webp');
-    // background-image: url('../media/airplane-6674689_1920.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: grid;
@@ -29,40 +27,23 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: 3px solid red;
-    // text-align: center;
-    // display: grid;
-    // // grid-template-columns: 500px;
-    // align-items: center;
-    // justify-content: center;
-    // padding-top: 300px;
+   
     box-shadow: 0px 1px 10px 4px rgba(214, 214, 214, 0.233);
-    // opacity: 0.8;
-    // width: 800px;
-    // height: inherit;
-    // width: inherit;
 }
 
 .headline {
     // border: 2px solid #fff;
-    // width: inherit;
 }
 
 .booking {
     // border: 2px solid #fff;
-    // width: inherit;
-
 }
 
 .trip-documentation {
     // border: 2px solid #fff;
-    // width: inherit;
-
-
 }
 
 footer {
-    // height: 150px;
-    border: 1px solid red;
-    width: inherit;
+    // border: 1px solid red;
 
 }

@@ -1,5 +1,4 @@
 import { submitForm} from './request'
-// import { form } from './appElement'
 import { form, aboutMyTrip, restoreData, deleteMyTrip} from './execution'
 
 export function loadApp(){
