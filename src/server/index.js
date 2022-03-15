@@ -23,9 +23,23 @@ app.use(express.json())
 
 // Set up the server at port 8000
 const port = process.env.PORT || 8000;
+
+
 const server = app.listen(port, function listener(){
     console.log("Server is working at port: " + port);
 });
+
+// jest needs an asynchronous function server to work 
+// Server error obtained during JEST TESTING: Cannot log after tests are done. Did you forget to wait for something async in your test?
+// Attempted to log "Server is working at port: 8000".
+// SOLUTION: comment server above and run this code below when testing 
+// (async function () {
+//     // const server = await app.listen(port);
+//     // console.log('Server started on port: ' + port)
+//     const server = app.listen(port, function listener(){
+//         console.log("Server is working at port: " + port);
+//     });
+// })
 
 app.get('/', (req, res) => {
     // res.sendFile(path.resolve('src/client/views/index.html'));

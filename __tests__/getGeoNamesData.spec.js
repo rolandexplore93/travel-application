@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime';
 const getGeoNamesData = require('../src/server/index');
 
 describe("Validating if getGeoNamesData() is working perfectly", () => {

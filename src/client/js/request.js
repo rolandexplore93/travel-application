@@ -23,9 +23,7 @@ export async function submitForm(evt){
         console.log("Error! Please, enter correct information", error)
     })
     .then(() => formResetToDefault())
-
-
-
+    
 }
 
 export const displayTripToUI = async(updateTrip) => {
@@ -79,12 +77,22 @@ export const displayTripToUI = async(updateTrip) => {
 }
 
 // User input to be deleted when user click on clear
-const clearInput = document.getElementById("clearTrip");
-clearInput.addEventListener("click", function(e){
-    e.preventDefault()
-    const form = document.querySelector('.bookTrip');
-    form.reset()
-})
+// const clearInput = document.querySelector(".clearTrip");
+// clearInput.addEventListener("click", function(e){
+//     e.preventDefault()
+//     const form = document.querySelector('.bookTrip');
+//     form.reset()
+// })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const clearInput = document.querySelector('.clearTrip');
+    clearInput.addEventListener('click', (e) => {
+       //Do your clearing....
+        e.preventDefault()
+        const form = document.querySelector('.bookTrip');
+        form.reset()
+    })
+ })
 
 // formResetToDefault
 const formResetToDefault = async () => {

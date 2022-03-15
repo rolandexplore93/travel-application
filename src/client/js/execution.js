@@ -7,7 +7,7 @@ const futureTrip = document.querySelector('.trip__record');
 // console.log(futureTrip)
 
 export const aboutMyTrip = [];
-console.log(aboutMyTrip)
+// console.log(aboutMyTrip)
 
 
 // Estimate the trip duration
