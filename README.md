@@ -1,5 +1,6 @@
 # Travel-application
 This travel application allows you to schedule your future trip from your location to your destination. Additionally, you will receive the weather information about the destination, destination's country, country population & currency, your trip duration and the number of days remaining for your trip to commence.
+![travel-application-page](https://user-images.githubusercontent.com/63131597/158375636-2dbefc56-90b6-4908-9432-77c5be229620.PNG)
 
 ## Dependencies
 This project runs on [Node.js](https://nodejs.dev/) environment (version 17 and above) and uses [Express](https://expressjs.com/) to run server and routes. Many dependencies were used to get this project function and some of which are cors() for cross-origin allowance, body-parser as middleware, [Axios](https://www.npmjs.com/package/axios) to make an API call from the server and [Webpack](https://webpack.js.org/). Other dependencies include;
@@ -28,6 +29,7 @@ This project uses 4 external API to generate various information about the user 
 * Install [jest](https://jestjs.io/) using "npm install --save-dev jest"
 * In package.json file, add to your script, { "test": "jest" }
 * type "npm test" to run test
+![jest_testing](https://user-images.githubusercontent.com/63131597/158375403-95d669d3-221b-4beb-800e-ebc2a2d892fb.PNG)
 
 ## How to run travel-application in development mode
 * Set up webpack.dev.js file for development
