@@ -32,13 +32,13 @@ export const displayTripToUI = async(updateTrip) => {
         <div class="trip__card" id="${updateTrip.id}">
             <div class="card__header">
                 <i class="fas fa-plane-departure fa-2x"></i>
-                <p>Your Trip To <span id="loc"> ${updateTrip.locationTo},${updateTrip.destinationCountry}</span> is <span id="days-left">${updateTrip.daysRemainingToStartTrip}</span> Days Away</p>
+                <p>Your Trip To <span id="loc"> ${updateTrip.locationTo}, ${updateTrip.destinationCountry}</span> is <span id="days-left">${updateTrip.daysRemainingToStartTrip}</span> Days Away</p>
                 <i class="fas fa-igloo fa-2x" aria-hidden="true"></i>
             </div>
             <div class="trip__details">
                 <div class="trip__destination">
                     <img src="${updateTrip.photoAddress}" alt="user-destination-image" width="200" height="200">
-                    <p class="" id="about-country"><span>${updateTrip.locationTo},${updateTrip.destinationCountry}</span><span>Temperature: ${updateTrip.weather.temperature} degrees</span><span>High: ${updateTrip.weather.highTemperature} degrees</span><span>Low: ${updateTrip.weather.lowTemperature} degrees</span></p>
+                    <p class="" id="about-country"><span>${updateTrip.locationTo}, ${updateTrip.destinationCountry}</span><span>Temperature: ${updateTrip.weather.temperature} degrees</span><span>High: ${updateTrip.weather.highTemperature} degrees</span><span>Low: ${updateTrip.weather.lowTemperature} degrees</span></p>
                     <p id="currency">Currency: <span id="currency-name">${updateTrip.currencyName}</span> (<span id="currency-symbol">${updateTrip.currencySymbol}</span>)</p>
                     <p id="population">Population: <span id="country-population">${updateTrip.population}</span></p>
                     <p id="country-weather">Weather description: <span id="weather-description">${updateTrip.weather.description}</span></p>

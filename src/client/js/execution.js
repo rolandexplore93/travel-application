@@ -109,14 +109,12 @@ export const tripInformation = async (locationTo, locationFrom, departureDate, r
 
 
     return tripFeedback;
-
-
 }
 
 
 // post data to the server
 const postData = async(url = '', data = {}) => {
-
+    console.log(url, data)
     try {
 		const response = await fetch(url, {
 			method: 'POST',

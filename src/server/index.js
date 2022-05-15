@@ -32,7 +32,7 @@ const server = app.listen(port, function listener(){
 // jest needs an asynchronous function server to work 
 // Server error obtained during JEST TESTING: Cannot log after tests are done. Did you forget to wait for something async in your test?
 // Attempted to log "Server is working at port: 8000".
-// SOLUTION: comment server above and run this code below when testing 
+// SOLUTION: read the server comment above and run this code below when testing 
 // (async function () {
 //     // const server = await app.listen(port);
 //     // console.log('Server started on port: ' + port)
@@ -55,6 +55,7 @@ app.post('/mytrip', handleTripRequest)
 
 // handleTripRequest to get data from the APIs
 async function handleTripRequest(request, response){
+    console.log(request)
     // Empty object to store the infortation obtained
     const tripDataInformation = {}
 

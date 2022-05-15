@@ -1,23 +1,35 @@
-.booking {
-    // background-color: #bbb;  
+.bookTrip {
+    // background-color: #bbb; 
+    border: 1px solid red;
+    width: 100%;
+    padding: 5px;
+    // height: fit-content;
+    // width: 450px;
+    box-sizing: border-box;
+    height: fit-content;
+    box-sizing: border-box;
 
     .tripOrder {
-        color: rgb(235, 220, 11);
-        margin-bottom: 20px;
+        // color: rgb(235, 220, 11);
+        margin-bottom: 10px;
+        width: 100%;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+
     
         > p {
             margin: 0;
-            font-size: 1.5rem;
-            padding-bottom: 3px;
+            font-size: 1.1rem;
         };
 
         > input {
-            padding: 10px 5px;
+            padding: 5px 5px;
             border-radius: 3px;
             outline: 0;
             border: 1px solid #000;
             width: 100%;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            margin: 0;
         }
 
         > input::placeholder {
@@ -29,15 +41,15 @@
     .ticketDecision {
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: 15px;
         // border: 1px solid red;
 
         
         > button {
-            padding: 15px 5px;
+            padding: 7px 5px;
             width: 150px;
             cursor: pointer;
-            font-size: 1.2rem;
+            font-size: 1rem;
             border: 0;
             font-weight: 600;
             border-radius: 3px;

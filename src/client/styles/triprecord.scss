@@ -1,12 +1,12 @@
-
-
 .trip__card {
-    // border: 1px solid red;
+    border: 1px solid red;
     border-radius: 3px;
     background-image: url('../media/road-6654573__480.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+
 
     .card__header {
         // background: red;
@@ -35,7 +35,7 @@
             width: 60%;
 
             > img {
-                border: 1px solid red;
+                // border: 1px solid red;
                 height: 250px;
                 width: 100%;
 

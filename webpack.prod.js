@@ -33,6 +33,9 @@ module.exports = {
             },
         ]
     },
+    output: {
+        publicPath: "/travel-application", 
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",

@@ -1,17 +1,24 @@
 .headline {
-    padding: 0 100px;
+    // padding: 0 50px;
     margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid red;
+    // width: inherit;
+    height: fit-content;
 
     .title > h1 {
         font-size: 4rem;
-        // border: 1px solid yellow;
+        border: 1px solid yellow;
+        word-wrap: break-word;
     }
 
     .title > p {
         font-size: 2rem;
-        text-align: center;
         font-weight: 700;
         text-decoration: underline;
+        border: 1px solid yellow;
+        word-wrap: break-word;
+
     }
 }
 
