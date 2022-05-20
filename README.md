@@ -1,5 +1,10 @@
 # Travel-application
 This travel application allows you to schedule your future trip from your location to your destination. Additionally, you will receive the weather information about the destination, destination's country, country population & currency, your trip duration and the number of days remaining for your trip to commence.
+
+## Project Display
+![travel-app-ezgif](https://user-images.githubusercontent.com/63131597/169578315-34eefaad-8a6e-4b27-9734-259db38e00cb.gif)
+
+## Project Image
 ![travel-application-page](https://user-images.githubusercontent.com/63131597/158375636-2dbefc56-90b6-4908-9432-77c5be229620.PNG)
 
 ## Dependencies
