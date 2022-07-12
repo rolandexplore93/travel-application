@@ -5,15 +5,11 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 1.1rem;
-    border: 1px solid red;
     width: 100%;
-
-
 
     > .contact {
         display: flex;
         align-self: center;
-        // border: 1px solid yellow;
 
         > * {
             margin-right: 15px;

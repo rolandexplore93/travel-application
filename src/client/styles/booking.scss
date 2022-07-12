@@ -1,22 +1,14 @@
 .bookTrip {
-    // background-color: #bbb; 
-    border: 1px solid red;
     width: 100%;
     padding: 5px;
-    // height: fit-content;
-    // width: 450px;
     box-sizing: border-box;
     height: fit-content;
-    box-sizing: border-box;
 
     .tripOrder {
-        // color: rgb(235, 220, 11);
         margin-bottom: 10px;
         width: 100%;
-        border: 1px solid #fff;
         box-sizing: border-box;
 
-    
         > p {
             margin: 0;
             font-size: 1.1rem;
@@ -42,8 +34,6 @@
         display: flex;
         justify-content: space-between;
         margin-top: 15px;
-        // border: 1px solid red;
-
         
         > button {
             padding: 7px 5px;
